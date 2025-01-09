@@ -1,7 +1,15 @@
-import type { NextConfig } from "next";
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  images: {
+    domains: [
+      'raw.githubusercontent.com',
+      'static.wikia.nocookie.net'
+    ],
+  },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  reactStrictMode: true,
+}
 
-const nextConfig: NextConfig = {
-  /* config options here */
-};
-
-export default nextConfig;
+module.exports = nextConfig
